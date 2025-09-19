@@ -17,15 +17,15 @@ We set up the data frame. Edit the data below to include information about your 
 
 ```{r setup-tibble}
 team_data <- tibble(
-  name = c("Peter Rabbit", "member 1", "member 2", 
-           "member 3", "member 4"),
-  github_username = c("mcgregors-garden", "username 1", "username 2", 
-                      "username 3", "username 4"), 
-  colour = c("powderblue", "colour 1", "colour 2", 
-             "colour 3", "colour 4"),
-  hobby = c("Hopping", "hobby 1", "hobby 2", 
-            "hobby 3", "hobby 4"),
-  favourite_number = c(2, NA, NA, NA, NA)
+  name = c("Sophie", "Ben", "Stewart", 
+           "Magnus", "Toby"),
+  github_username = c("Sophie", "BWipat", "stuart620", 
+                      "MagnusBryce", "Toby"), 
+  colour = c("purple", "royalblue", "blue", 
+             "lightblue", "magenta"),
+  hobby = c("sleeping", "climbing", "running", 
+            "swimming", "running"),
+  favourite_number = c(7, 15, 6, 4, 8)
   )
 
 team_data
@@ -47,19 +47,20 @@ p1
 ```
 
 
-*Remove this text (including the stars), and add your answer for Exercise 18 here.*
+This plot shows my group members' GitHub usernames listed along the x axis, with a scale up the y axis labelled favourite number. A bar graph is generated with the colour corresponding to each member's favourite colour and height corresponding to favourite number. 
 
 ### Exercises 19
 
 Change the text of the plot title and axis labels.
 
 ```{r labelled-bar-plot}
-p1 + labs(x = "Insert text here", 
-          y = "Insert text here",
-          title = "Insert text here")
+p1 + labs(x = "GitHub Username", 
+          y = "Favourite Number",
+          title = "Favourite Numbers of Workshop group 2")
 ```
 
-*Remove this text (including the stars), and add your answer for Exercise 19 here.*
+Labs function allows labelling of axes on charts. 
+
 
 ### Exercise 20
 
@@ -69,4 +70,4 @@ p2 <- ggplot(team_data, aes(x = hobby)) +
 p2
 ```
 
-*Remove this text (including the stars) and add your answer for Exercise 20 here.*
+A pie chart might be a more suitable alternative for representing the data here?
